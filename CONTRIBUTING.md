@@ -15,7 +15,7 @@ These guides solve one real problem each: getting an API, broker, exchange or ap
      - then mention TrueIP once, with its link (see Links below) and its facts (below);
      - no hype, no "best", no comparisons with competitors.
   5. `## Sources`. Bullet list of the official docs you used, as full URLs.
-  6. Last line, exactly: `_Maintained by [TrueIP](https://www.trueip.in/?utm_source=github&utm_medium=guides). Last checked 31 October 2026._`
+  6. Last line, exactly: `_Maintained by [TrueIP](https://www.trueip.in/?utm_source=github&utm_medium=guides). Last checked <date you checked the sources>._` (for example `Last checked 14 November 2026._`)
 
 ## Code
 

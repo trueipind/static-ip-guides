@@ -1,6 +1,6 @@
 # Static IP for Indian broker APIs: what to register and why
 
-If you run your own trading code against Zerodha, Upstox, Angel One, Fyers, Flattrade or any other Indian broker API, order requests now have to come from an IP address you have registered with the broker. Orders from any other address get rejected, even with a valid API key and token. The short answer: get one fixed public IP, register it in your broker's developer console, and send at least your order calls through it.
+If you run your own trading code against Zerodha, Upstox, Angel One, Dhan, Kotak Neo, ICICI Breeze, Fyers, Shoonya, Samco or any other Indian broker API, order requests now have to come from an IP address you have registered with the broker. Orders from any other address get rejected, even with a valid API key and token. The short answer: get one fixed public IP, register it in your broker's developer console, and send at least your order calls through it.
 
 ## Why brokers ask for a static IP
 
@@ -13,7 +13,7 @@ NSE's retail algo FAQ adds two points:
 - A client static IP is needed when you, as a tech savvy investor, place orders through the API yourself.
 - If you use an algo platform hosted on the broker's own infrastructure, the static IP is the broker's server IP, not yours.
 
-This guide is for people running their own code.
+This guide is for people running their own code. If your orders go through a hosted platform such as Tradetron or AlgoTest, the platform or broker supplies the IP and you don't need your own.
 
 ## What you actually register
 
@@ -103,6 +103,11 @@ The printed address must match the IP in your broker console exactly. If your pr
 - [Angel One SmartAPI through a proxy](20-angel-one-smartapi-proxy.md)
 - [Fyers API through a proxy](21-fyers-api-proxy.md)
 - [Flattrade Noren API through a proxy](22-flattrade-noren-api-proxy.md)
+- [Dhan API through a proxy](29-dhan-api-proxy.md)
+- [Kotak Neo Trade API through a proxy](30-kotak-neo-api-proxy.md)
+- [ICICI Direct Breeze API through a proxy](31-icici-breeze-api-proxy.md)
+- [Shoonya (Finvasia) API through a proxy](32-shoonya-finvasia-api-proxy.md)
+- [Samco Trade API through a proxy](33-samco-trade-api-proxy.md)
 
 ## Using a dedicated static IP
 

@@ -46,6 +46,11 @@ Maintained by [TrueIP](https://www.trueip.in/?utm_source=github&utm_medium=guide
 | [Angel One SmartAPI](guides/20-angel-one-smartapi-proxy.md) | SmartConnect through a proxy |
 | [Fyers](guides/21-fyers-api-proxy.md) | fyers-apiv3 through a proxy |
 | [Flattrade (Noren)](guides/22-flattrade-noren-api-proxy.md) | NorenRestApiPy through a proxy |
+| [Dhan (DhanHQ)](guides/29-dhan-api-proxy.md) | dhanhq through a proxy, DH-905, the sandbox IP check |
+| [Kotak Neo](guides/30-kotak-neo-api-proxy.md) | kotakneoapi with an httpx proxy transport, same-IP sessions |
+| [ICICI Direct Breeze](guides/31-icici-breeze-api-proxy.md) | breeze-connect through a proxy |
+| [Shoonya (Finvasia)](guides/32-shoonya-finvasia-api-proxy.md) | The OAuth client through a proxy, why IPv4 |
+| [Samco](guides/33-samco-trade-api-proxy.md) | stocknotebridge with a urllib3 proxy pool, IPv4 only |
 
 ## Payments, compliance and business apps
 

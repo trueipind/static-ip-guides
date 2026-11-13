@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
 const DIR = path.join(ROOT, "guides");
-const FOOTER = "_Maintained by [TrueIP](https://www.trueip.in/?utm_source=github&utm_medium=guides). Last checked 31 October 2026._";
+const FOOTER = /^_Maintained by \[TrueIP\]\(https:\/\/www\.trueip\.in\/\?utm_source=github&utm_medium=guides\)\. Last checked \d{1,2} (January|February|March|April|May|June|July|August|September|October|November|December) 20\d\d\._$/;
 const BANNED = /\bdelve|dive in|let's explore|seamless|\brobust|leverag|\bunlock|game-changer|\bcrucial|\bpivotal|streamline|\bempower|\bharness|\belevate|\brealm\b|tapestry|it's important to note|in conclusion|fast-paced|whether you're a|look no further|not only\b[^.]*\bbut also|^#+ *(conclusion|final thoughts)/im;
 
 const problems = [];
@@ -19,7 +19,7 @@ for (const f of files) {
   if ((prose.match(/^# /gm) || []).length !== 1) p("exactly one H1");
   if (!/^## Using a dedicated static IP\s*$/m.test(prose)) p("missing '## Using a dedicated static IP'");
   if (!/^## Sources\s*$/m.test(prose)) p("missing '## Sources'");
-  if (md.trimEnd().split("\n").at(-1) !== FOOTER) p("last line must be the footer");
+  if (!FOOTER.test(md.trimEnd().split("\n").at(-1))) p("last line must be the footer");
   if (/[–—]/.test(md)) p("em/en dash");
   const ban = md.match(BANNED);
   if (ban) p(`banned phrase "${ban[0]}"`);
